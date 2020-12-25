@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_login">
+
+    <ImageView
+        android:id="@+id/image_major"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="80dp"/>
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_major"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/resetpwd_edit_name"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:background="@drawable/edge"
+            android:hint="请输入您的用户名"/>
+
+        <EditText
+            android:id="@+id/resetpwd_edit_pwd_old"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:hint="请输入您的密码"
+            android:inputType="textPassword"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:background="@drawable/edge"/>
+
+        <EditText
+            android:id="@+id/resetpwd_edit_pwd_new"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:hint="请确认您的密码"
+            android:inputType="textPassword"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:background="@drawable/edge"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/register_btn_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/edge"
+                android:text="注册"
+                android:onClick="onRegister"
+                android:textSize="20dp" />
+            <Button
+                android:id="@+id/register_btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/edge"
+                android:text="取消"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
